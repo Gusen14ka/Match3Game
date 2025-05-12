@@ -1,0 +1,35 @@
+﻿{
+  // Версия схемы VS 2022
+  "version": "2.0",
+  "configurations": [
+    {
+      "name": "x64-Debug", // имя конфигурации в VS UI
+      "generator": "Visual Studio 17 2022", // CMake-генератор
+      "configurationType": "Debug", // Debug/Release
+      "inheritEnvironments": [ "msvc_x64" ], // <-- важно для IntelliSense
+      "buildRoot": "${projectDir}\\out\\build\\${name}",
+      "installRoot": "${projectDir}\\out\\install\\${name}",
+      "cmakeCommandArgs": "-DCMAKE_TOOLCHAIN_FILE=C:/vcpkg/scripts/buildsystems/vcpkg.cmake -DCMAKE_CXX_STANDARD=20 -DCMAKE_SYSTEM_VERSION=10.0.22000.0",
+      "buildCommandArgs": "",
+      "cacheVariables": {
+        "CMAKE_TOOLCHAIN_FILE": "C:/vcpkg/scripts/buildsystems/vcpkg.cmake",
+        "VCPKG_APPLOCAL_DEPS": "OFF",
+        "VCPKG_APPLOCAL_DEPS_INSTALL": "OFF"
+      }
+    },
+    {
+      "name": "x64-Release",
+      "generator": "Visual Studio 17 2022",
+      "configurationType": "Release",
+      "inheritEnvironments": [ "msvc_x64" ],
+      "buildRoot": "${projectDir}\\out\\build\\${name}",
+      "installRoot": "${projectDir}\\out\\install\\${name}",
+      "cmakeCommandArgs": "-DCMAKE_TOOLCHAIN_FILE=C:/vcpkg/scripts/buildsystems/vcpkg.cmake -DCMAKE_CXX_STANDARD=20 -DCMAKE_SYSTEM_VERSION=10.0.22000.0",
+      "cacheVariables": {
+        "CMAKE_TOOLCHAIN_FILE": "C:/vcpkg/scripts/buildsystems/vcpkg.cmake",
+        "VCPKG_APPLOCAL_DEPS": "OFF",
+        "VCPKG_APPLOCAL_DEPS_INSTALL": "OFF"
+      }
+    }
+  ]
+}

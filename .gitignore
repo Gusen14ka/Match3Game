@@ -1,0 +1,48 @@
+# CMake билд-файлы
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Multi-config output (VS)
+Debug/
+Release/
+x64-*/Debug/
+x64-*/Release/
+
+# CMake output directories, если ты их явно не включил
+build/
+out/
+
+# Visual Studio файлы
+*.vcxproj*
+*.sln
+*.user
+*.opensdf
+*.VC.db
+.vs/
+
+# vcpkg и сторонние библиотеки
+/vcpkg_installed/
+/vcpkg.buildtrees/
+/vcpkg.packages/
+
+# IDE-специфичное
+.idea/
+*.iml
+*.db
+*.log
+
+# Артефакты исполнения
+*.exe
+*.dll
+*.pdb
+
+# Логи, временные файлы
+*.tmp
+*.obj
+*.o
+*.obj
+*.ilk
+*.idb
+*.ipdb
